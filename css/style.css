@@ -442,6 +442,22 @@ img[alt=SMUCampus] {
   width: 700px;
   height: 300px;
 }
+img[alt=searchEngine] {
+  width: 120px;
+  height: 120px;
+}
+img[alt=webAnalysis] {
+  width: 120px;
+  height: 120px;
+}
+img[alt=webDevelopment] {
+  width: 120px;
+  height: 120px;
+}
+img[alt=CLNs] {
+  width: 120px;
+  height: 120px;
+}
 body {
   webkit-tap-highlight-color: #0085a1;
 }
