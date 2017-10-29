@@ -461,6 +461,32 @@ img[alt=CLNs] {
 img[alt=pokedex] {
   width: 150px;
   height: 150px;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 3px;
+  border: 0.5px solid #ddd;
+  border-radius: 8px;
+}
+img[alt=pokedex]:hover {
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+img[alt=searchEngine]:hover {
+  position: relative;
+  bottom: 5px;
+}
+img[alt=webAnalysis]:hover {
+  position: relative;
+  bottom: 5px;
+}
+img[alt=webDevelopment]:hover {
+  position: relative;
+  bottom: 5px;
+}
+img[alt=CLNs]:hover {
+  position: relative;
+  bottom: 5px;
 }
 body {
   webkit-tap-highlight-color: #0085a1;
