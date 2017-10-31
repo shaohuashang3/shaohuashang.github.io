@@ -467,6 +467,10 @@ img[alt=pokedex] {
   border: 0.5px solid #ddd;
   border-radius: 8px;
 }
+img[alt=trie] {
+  width: 500px;
+  height: 300px;
+}
 img[alt=pokedex]:hover {
   position: relative;
   cursor: pointer;
