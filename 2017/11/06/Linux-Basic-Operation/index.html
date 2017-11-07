@@ -10,6 +10,10 @@
 
     <!--Description-->
     
+        <meta name="description" content="Linux Directory Structure
+
+The linux system directory is really different from Windows. If you are using linux first time, you need to take some time ">
+    
 
     <!--Author-->
     
@@ -18,7 +22,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="All tags"/>
+        <meta property="og:title" content="Linux-Basic-Operation"/>
     
 
     <!--Open Graph Description-->
@@ -40,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>All tags - Hi, I&#39;m Shaohua Shang</title>
+    <title>Linux-Basic-Operation - Hi, I&#39;m Shaohua Shang</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -163,59 +167,103 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-
-    <header class="intro-header" style="background-image: url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=2551&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>All tags</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
+<header class="intro-header" style="background-image: url('https://images.unsplash.com/photo-1484665739383-a1069a82d4be?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                    <div class="post-preview">
-    <a href="/tags/About-Me/">
-        <h1 class="post-title archive">
-            About-Me
-        </h1>
-    </a>
-</div>
-                
-                    <div class="post-preview">
-    <a href="/tags/Algorithm/">
-        <h1 class="post-title archive">
-            Algorithm
-        </h1>
-    </a>
-</div>
-                
-                    <div class="post-preview">
-    <a href="/tags/Computer-Network/">
-        <h1 class="post-title archive">
-            Computer-Network
-        </h1>
-    </a>
-</div>
-                
-                <div class="archive-before-pagination"></div>
+                <div class="post-heading">
+                    <h1>Linux-Basic-Operation</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2017-11-06
+                        
+                    </span>
+                </div>
             </div>
         </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Computer-Network/">#Computer-Network</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+            
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Linux-Directory-Structure"><a href="#Linux-Directory-Structure" class="headerlink" title="Linux Directory Structure"></a>Linux Directory Structure</h1><hr>
+<p><img src="https://www.howtogeek.com/wp-content/uploads/2012/06/ximage351.png.pagespeed.gp+jp+jw+pj+ws+js+rj+rp+rw+ri+cp+md.ic.ci8pg579c9.png" alt="trie"></p>
+<p>The linux system directory is really different from Windows. If you are using linux first time, you need to take some time to familiar with the file system structure.</p>
+<ul>
+<li><strong>/</strong> – The Root Directory, everything on Linux system is located under the / directory, known as the root directory.</li>
+<li><strong>/home</strong> – Home Folders, contains a home folder for each user, and it is also the FTP site directory.</li>
+<li><strong>/bin</strong> – Essential User Binaries, contains the essential user binaries (programs) that must be present when the system is mounted in single-user mode. It contains the binaries (programs) of user.</li>
+<li><strong>/sbin</strong> – System Administration Binaries, is similar to the /bin directory. It contains essential binaries that are generally intended to be run by the root user for system administration.</li>
+<li><strong>/mnt</strong> – Temporary Mount Points, is where system administrators mounted temporary file systems while using them. It is similar to CD drive and Floppy Disk.</li>
+<li><strong>/boot</strong> – Static Boot Files, contains the files needed to boot the system – for example, the GRUB boot loader’s files and Linux kernels are stored here.</li>
+<li><strong>/etc</strong> – Configuration Files, contains configuration files, which can generally be edited by hand in a vim editor. Note that the /etc/ directory contains system-wide configuration files – user-specific configuration files are located in each user’s home directory.</li>
+<li><strong>/var</strong> – Variable Data Files, contains inconstant files. It is the writable counterpart to the /usr directory, which must be read-only in normal operation. </li>
+<li><strong>/usr</strong> – User Binaries &amp; Read-Only Data, the /usr directory contains applications and files used by users, as opposed to applications and files used by the system. The /usr/local directory is where locally compiled applications install to by default – this prevents them from mucking up the rest of the system.</li>
+</ul>
+<h1 id="Basic-Linux-Commands"><a href="#Basic-Linux-Commands" class="headerlink" title="Basic Linux Commands"></a>Basic Linux Commands</h1><hr>
+<p><font size="5px"><b>Linux Most Frequently Used Commands</b></font><br><strong>pwd</strong> - Shows what directory (folder) you are in.<br><strong>cd</strong> - Changes directories.<br><strong>ls</strong> - Lists files.<br><strong>ls -al</strong> - You’ll see a huge list of files that you can’t see with the ‘ls’ command alone and lots of details.<br><strong>mkdir</strong> - Creates a directory.<br><strong>rmdir</strong> - Removes a directory.<br><strong>touch</strong> - Creates new, empty files.<br><strong>cp</strong> - Copies file.<br><strong>cp -r dir1 dir2</strong> - Copies file recursively.<br><strong>mv data1 newdata/</strong> - Moves the file data1 to the folder newdata and deletes the old one.<br><strong>rm</strong>- Deletes the file in the current directory.<br><strong>rm -rf</strong> - Force to deletes all content, including files and directories.<br><strong>ln</strong> - Creates links between files.<br><strong>ln -s</strong> - Creates symbolic links with the -s option<br><strong>more</strong> - Displays output in the terminal one page at a time.<br><strong>grep</strong> - Matches a regular expression against text in a file. ex: grep [OPTIONS] PATTERN [FILE…]<br><strong>&gt;</strong> - Redirect command. ex: cat test test1 test2 &gt; test3 (This will create a file called test3 and all output will be redirected in a newly created file.)<br><strong>&gt;&gt;</strong> - Appends standard output with redirection operator.<br><strong>|</strong> - Pipe command. ex: cat song.txt | more (use parameters more with cat command as show above.)<br><strong>find</strong> - Lists out all the files in the current directory as well as the subdirectories in the current directory. ex: find  /  -name  aaa.c<br><strong>date</strong> - Prints out, or change the value of, the system’s time and date information. ex: date [OPTION]… [+FORMAT] ; date [-u|–utc|–universal] [MMDDhhmm[[CC]YY][.ss]]<br><strong>cal 11 2017</strong> - Displays the calender for November of the year 2017.<br><strong>cal 2018</strong> - Displays the calender for whole year 2018.</p>
+<p><font size="5px"><b>Network State Commands</b></font><br><strong>netstat -an</strong> - Shows information about all active connections to the server, including the source and destination IP addresses and ports, if you have proper permissions.<br><strong>netstat -anp</strong> - And shows the PID (process identifier) and name of the program to which each socket belongs.<br><strong>ping</strong> - It is frequently used to test, at the most basic level, whether another system is reachable over a network, and if so, how much time it takes for that data to be exchanged.<br><strong>traceroute</strong> - Prints the route that packets take to a network host.<br><strong>route</strong> - Shows or manipulates the IP routing table.<br><strong>ifconfig</strong> - Views the configuration of, a network interface.</p>
+
+
+                
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59f638dd2142a8ba"></script>
+
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_sharing_toolbox"></div>
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
 
 
-
-
+                </div>
+            
+        </div>
+    </div>
+</article>
 
     <!-- Footer -->
     <hr />
