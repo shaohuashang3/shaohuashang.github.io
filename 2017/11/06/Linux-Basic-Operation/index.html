@@ -271,7 +271,9 @@ The linux system directory is really different from Windows. If you are using li
 <li><strong>COMMAND</strong> - The running commands and processes.</li>
 </ul>
 <h2 id="Kill-Processes"><a href="#Kill-Processes" class="headerlink" title="Kill Processes"></a>Kill Processes</h2><hr>
-<p><strong>kill [PID]</strong> - To terminate individual processes as specified by their process ID numbers or “PIDs.”<br><strong>kill -9 [PID]</strong> -<br><strong>killall</strong></p>
+<p><strong>kill [PID]</strong> - To terminate individual processes as specified by their process ID numbers or “PIDs.”<br><strong>kill -9 [PID]</strong> - Due to some processes are important, they may catch some signals. So if they cannot be killed, we can use <code>-9</code> option to kill some particularly unruly processes.<br><strong>killall [process name]</strong> - To terminate all programs that match the name specified.</p>
+<h2 id="Top-Command"><a href="#Top-Command" class="headerlink" title="Top Command"></a>Top Command</h2><hr>
+<p>We can use <code>top</code> command to view a real time list of process and their consumption of system resources.</p>
 
 
                 
