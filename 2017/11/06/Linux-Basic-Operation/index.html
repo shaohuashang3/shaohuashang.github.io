@@ -273,7 +273,36 @@ The linux system directory is really different from Windows. If you are using li
 <h2 id="Kill-Processes"><a href="#Kill-Processes" class="headerlink" title="Kill Processes"></a>Kill Processes</h2><hr>
 <p><strong>kill [PID]</strong> - To terminate individual processes as specified by their process ID numbers or “PIDs.”<br><strong>kill -9 [PID]</strong> - Due to some processes are important, they may catch some signals. So if they cannot be killed, we can use <code>-9</code> option to kill some particularly unruly processes.<br><strong>killall [process name]</strong> - To terminate all programs that match the name specified.</p>
 <h2 id="Top-Command"><a href="#Top-Command" class="headerlink" title="Top Command"></a>Top Command</h2><hr>
-<p>We can use <code>top</code> command to view a real time list of process and their consumption of system resources.</p>
+<p>We can use <code>top</code> command to view a real time list of process and their consumption of system resources. The top program provides a dynamic real-time view of a running system. It can display system summary information, as well as a list of processes or threads currently being managed by the kernel. The types of system summary information shown and the types, order and size of information displayed for tasks are all user-configurable.</p>
+<ul>
+<li>If you want to display only processes with a user id or username matching that given, you can enter <code>top</code> command and then enter <code>u</code> and enter username or uid.</li>
+<li>If you want to kill process, you can enter <code>k</code> and the <code>PID</code> you want to kill.</li>
+<li><strong>top -d 10</strong> - Change-Delay-Time-interval, you will be prompted to enter the delay time, in seconds, between display updates. </li>
+</ul>
+<h1 id="Crontab-Command"><a href="#Crontab-Command" class="headerlink" title="Crontab Command"></a>Crontab Command</h1><hr>
+<p>The crontab (short for “cron table”) is a list of commands that are scheduled to run at regular time intervals on your computer system. The crontab command opens the crontab for editing, and lets you add, remove, or modify scheduled tasks. The crontab file is in /etc/crontab.<br><strong>crontab -e</strong> - Edit the current crontab, using the editor specified in the environment variable VISUAL or EDITOR.<br>ex: <code><em> </em> <em> </em> * ls -l /etc/ &gt; /home/myetc.txt</code> - It will run <code>ls -l /etc/ &gt; /home/myetc.txt</code> cron jobs every minute.</p>
+<pre><code>field           allowed values    
+minute          0-59      
+hour            0-23     
+day of month    1-31            
+month           1-12 (or names; ex: Jan, Feb, Mar...)     
+day of week     0-7 (0 or 7 is Sunday, or use names; ex: Mon, Tues, Wed...)
+</code></pre><h2 id="Multiple-Crontab"><a href="#Multiple-Crontab" class="headerlink" title="Multiple Crontab"></a>Multiple Crontab</h2><hr>
+<p>We can write all jobs we want linux to do in one crontab file by using <code>crontab -e</code>.</p>
+<h2 id="Kill-Crontab"><a href="#Kill-Crontab" class="headerlink" title="Kill Crontab"></a>Kill Crontab</h2><hr>
+<p><strong>crontab -l</strong> - To display (“list”) the contents of your crontab.<br><strong>crontab -r</strong> - Remove your crontab, effectively un-scheduling all crontab jobs.</p>
+<h1 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h1><hr>
+<p>Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient.  It is an improved version of the vi editor distributed with most UNIX systems.<br>The vim editor can be a little difficult to learn, so I’ve been writing some vim tutorials here recently. One of the first things to know about vi is that it typically functions in three different modes:</p>
+<ul>
+<li>Command mode: all keystrokes are interpreted as commands</li>
+<li>Insert mode: most keystrokes are inserted as text (leaving out those with<br>modifier keys)</li>
+<li>Visual mode: helps to visually select some text, may be seen as a submode of<br>the the command mode.<br><img src="https://blog.interlinked.org/static/images/modes.png" alt="linux3"></li>
+</ul>
+<h2 id="Movement-Commands"><a href="#Movement-Commands" class="headerlink" title="Movement Commands"></a>Movement Commands</h2><hr>
+<p>The simplest movement commands are<br><strong>h</strong> - move left<br><strong>l</strong> - move right<br><strong>k</strong> - move up<br><strong>j</strong> - move down</p>
+<p>Obviously these commands work only in the command mode, of course you can also use the cursor keys (in all three modes). There are a lot of movement commands available in Vim, I’ll only cover a few, but if you need something special very often take a look at the help, I’m sure you’ll find something usable.</p>
+<p>Here are the most important commands.<br><strong>0</strong> or <strong>[Home]</strong> - First column of the line.<br><strong>^</strong> - First non-blank character of the line.<br><strong>$</strong> or <strong>[End]</strong> - Jump to the last character of the line.<br><strong>G</strong> - Jump to last non-blank character of the entire text.<br><strong>gg</strong> - Jump to the first line of the entire text.<br><strong>/word</strong> - Search for a word named “word” below.</p>
+<h2 id="Editing"><a href="#Editing" class="headerlink" title="Editing"></a>Editing</h2><hr>
 
 
                 
