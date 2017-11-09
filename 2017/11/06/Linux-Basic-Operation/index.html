@@ -302,7 +302,34 @@ day of week     0-7 (0 or 7 is Sunday, or use names; ex: Mon, Tues, Wed...)
 <p>The simplest movement commands are<br><strong>h</strong> - move left<br><strong>l</strong> - move right<br><strong>k</strong> - move up<br><strong>j</strong> - move down</p>
 <p>Obviously these commands work only in the command mode, of course you can also use the cursor keys (in all three modes). There are a lot of movement commands available in Vim, I’ll only cover a few, but if you need something special very often take a look at the help, I’m sure you’ll find something usable.</p>
 <p>Here are the most important commands.<br><strong>0</strong> or <strong>[Home]</strong> - First column of the line.<br><strong>^</strong> - First non-blank character of the line.<br><strong>$</strong> or <strong>[End]</strong> - Jump to the last character of the line.<br><strong>G</strong> - Jump to last non-blank character of the entire text.<br><strong>gg</strong> - Jump to the first line of the entire text.<br><strong>/word</strong> - Search for a word named “word” below.</p>
-<h2 id="Editing"><a href="#Editing" class="headerlink" title="Editing"></a>Editing</h2><hr>
+<h2 id="Cut-copy-and-paste-using-visual-selection"><a href="#Cut-copy-and-paste-using-visual-selection" class="headerlink" title="Cut/copy and paste using visual selection"></a>Cut/copy and paste using visual selection</h2><hr>
+<p><strong>yy</strong> - Copy the entire line characters from the current cursor position up to the position indicated by the next command.<br><strong>nyy</strong> - <code>n</code> is a number. Copy the downward n lines characters from the current cursor position up to the position indicated by the next command.<br><strong>wq</strong> - Quit and save file.<br><strong>q!</strong> - Quit and don’t save file.</p>
+<p>Visual selection is a common feature in applications, but Vim’s visual selection has several benefits.</p>
+<p>To cut-and-paste or copy-and-paste:</p>
+<ul>
+<li>Position the cursor at the beginning of the text you want to cut/copy.</li>
+<li>Press v to begin character-based visual selection, or V to select whole lines, or Ctrl-v or Ctrl-q to select a block.</li>
+<li>Move the cursor to the end of the text to be cut/copied. While selecting text, you can perform searches and other advanced movement.</li>
+<li>Press d (delete) to cut, or y (yank) to copy.</li>
+<li>Move the cursor to the desired paste location.</li>
+<li>Press p to paste after the cursor, or P to paste before.</li>
+</ul>
+<p>Visual selection (steps 1-3) can be performed using a mouse.<br>If you want to change the selected text, press c instead of d or y in step 4. In a visual selection, pressing c performs a change by deleting the selected text and entering insert mode so you can type the new text.</p>
+<h2 id="Split-Windows-in-Vim"><a href="#Split-Windows-in-Vim" class="headerlink" title="Split Windows in Vim"></a>Split Windows in Vim</h2><hr>
+<p>Many times, you want to view 2 or more files at once, and for that you will want to learn about Vim’s ability to split its window into multiple panes using the <code>:sp</code> command. ex: <code>:sp [fileName]</code> to open a new window for this file.<br>Once you have multiple windows open, there are many window commands available all starting with the <code>[ctrl] + w</code> key:</p>
+<ul>
+<li><strong>[ctrl] + w + n</strong> - :new horizontal split (editing a new empty buffer).</li>
+<li><strong>[ctrl] + w + s</strong> - :split window horizontally (editing current buffer).</li>
+<li><strong>[ctrl] + w + v</strong> - :vsplit window vertically (editing current buffer).</li>
+<li><strong>[ctrl] + w + c</strong> - :close window.</li>
+<li><strong>[ctrl] + w + o</strong> - close all windows, leaving :only the current window open.</li>
+<li><strong>[ctrl] + w + w</strong> - go to next window.</li>
+<li><strong>[ctrl] + w + p</strong> - go to previous window.</li>
+<li><strong>[ctrl] + w + <up></up></strong> - go to window above.</li>
+<li><strong>[ctrl] + w + <down></down></strong> - go to window below.</li>
+<li><strong>[ctrl] + w + <left></left></strong> - go to window on left.</li>
+<li><strong>[ctrl] + w + <right></right></strong> - go to window on right.</li>
+</ul>
 
 
                 
